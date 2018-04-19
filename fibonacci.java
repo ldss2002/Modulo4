@@ -1,15 +1,15 @@
 package fibonacci;
-import java.util.Scanner; 
+import java.util.Scanner;
 public class fibonacci {
 
-	public static long Fibonacci(int X) 
-	{if (X <= 2) 
-		return 1; 
-	else
-		return Fibonacci(X-1)+Fibonacci(X-2);} 
-	public static void main(String[] args)throws Exception 
-	{int N; 
-	Scanner LerS= new Scanner(System.in); 
-	System.out.print("Digite a ordem do número de Fibonacci que quer calcular ");
-	N=LerS.nextInt(); 
-	System.out.printf("F(%d)=%d", N, Fibonacci(N));}} 
+	public static void main (String[] args) { 
+	int num1 = 1, num2 = 0;
+	System.out.println(num2);
+	System.out.println(num1);
+	for(int i = 0; i < 18; i++) {
+		num1 = num1 + num2;
+		num2 = num1 - num2;
+		System.out.println(num1);
+	}
+}
+	}
